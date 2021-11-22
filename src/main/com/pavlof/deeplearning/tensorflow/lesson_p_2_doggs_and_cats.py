@@ -38,11 +38,10 @@ def run(data_dir_path):
         pickle.dump(x, pickle_out)
         pickle_out.close()
 
+        y = np.array(y)
         pickle_out = open(y_path, 'wb')
-        pickle.dump(x, pickle_out)
+        pickle.dump(y, pickle_out)
         pickle_out.close()
-
-
 
 
 def _create_training_data(data_dir_path):
